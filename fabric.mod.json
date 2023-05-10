@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "autofish",
+  "version": "0.9.8-SNAPSHOT",
+  "name": "Autofish",
+  "description": "Automatically reels in and recasts your fishing rod when you catch a fish.",
+  "authors": [
+    "troyboy50"
+  ],
+  "contact": {
+    "homepage": "https://minecraft.curseforge.com/projects/autofish"
+  },
+  "icon": "assets/autofish/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "troy.autofish.FabricModAutofish"
+    ],
+    "modmenu": [
+      "troy.autofish.modmenu.ModMenuApiAutofish"
+    ]
+  },
+  "mixins": [
+    "autofish.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*"
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/cloth-config-fabric-9.0.94.jar"
+    }
+  ]
+}
